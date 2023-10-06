@@ -18,7 +18,9 @@ app.get("/cek-resi/:nomor_resi", async (req, res) => {
     try {
         const nomorResi = req.params.nomor_resi;
         const result = await DataBarang.findOne({
-            nomorResi: nomorResi
+            where:{
+                nomorResi
+            }
 
         })
         if (result) {
@@ -32,7 +34,7 @@ app.get("/cek-resi/:nomor_resi", async (req, res) => {
 
         })
     } catch (error) {
-        return res.status(500), send({
+        return res.status(500).send({
             message: "gagal menampilkan data barang"
         })
     }
@@ -58,7 +60,8 @@ app.post("/input-data-barang", async (req, res) => {
 
         return res.send({
             message: "data berhasil di inputkan",
-            status: 200
+            status: 200,
+            nomorResi
         });
     } catch (error) {
         return res.status(500).send({
