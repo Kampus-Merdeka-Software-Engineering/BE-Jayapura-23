@@ -1,23 +1,26 @@
 {
   "development": {
+    "port":5861,
     "username": "root",
-    "password": null,
-    "database": "capstone",
-    "host": "127.0.0.1",
+    "password": "i3KVqsTndk2cNptd5EyP",
+    "database": "railway",
+    "host": "containers-us-west-130.railway.app",
     "dialect": "mysql"
   },
   "test": {
+    "port":5861,
     "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
+    "password": "i3KVqsTndk2cNptd5EyP",
+    "database": "railway",
+    "host": "containers-us-west-130.railway.app",
     "dialect": "mysql"
   },
   "production": {
+    "port":5861,
     "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "password": "i3KVqsTndk2cNptd5EyP",
+    "database": "railway",
+    "host": "containers-us-west-130.railway.app",
     "dialect": "mysql"
   }
 }
